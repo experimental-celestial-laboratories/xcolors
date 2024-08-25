@@ -1,7 +1,8 @@
-const bundleName = "cc-ts";
+const bundleName = "xcolors";
 const bundleDir = "dist";
 
 const { bundle } = require("luabundle");
+const luamin = require("luamin");
 const { writeFileSync, mkdirSync } = require("fs");
 const package = require("./package.json");
 const path = require("path/posix");
@@ -86,4 +87,5 @@ mkdirSync(bundleDir, {
 	recursive: true
 });
 
-writeFileSync(`${bundleDir}/${bundleName}.bundle.lua`, lua);
+writeFileSync(`${bundleDir}/${bundleName}.b.lua`, lua);
+writeFileSync(`${bundleDir}/${bundleName}.b.min.lua`, luamin.minify(lua));

@@ -27,6 +27,7 @@
 		"typescript": "^5.3.3"
 	},
 	"dependencies": {
+		"luamin": "^1.0.4",
 		"roblox-ts": "^2.2.0"
 	}
 }

@@ -1,2 +1,3 @@
 -- start
-require("main")
+local xcolors = require("main").xcolors
+return xcolors
