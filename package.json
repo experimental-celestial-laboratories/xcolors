@@ -9,7 +9,7 @@
 		"watch:bundle": "nodemon --exec \"yarn bundle\"",
 		"prepublishOnly": "yarn run build",
 		"bundle": "node bundle.js",
-		"dev": ""
+		"dev": "rbxtsc && node bundle.js"
 	},
 	"types": "out/index.d.ts",
 	"files": [
